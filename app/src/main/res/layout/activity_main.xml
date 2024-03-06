@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7A8300"
+    android:backgroundTint="#D5BD81"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Add a task"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button"
+
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_error"
+            android:backgroundTint="#E12323"
+            android:text="ADD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColorHighlight="@color/design_default_color_error"
+            android:textColorLink="@color/design_default_color_error" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
